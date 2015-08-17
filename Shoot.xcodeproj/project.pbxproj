@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FC3CE1B21B7BA82F0016E532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CE1B11B7BA82F0016E532 /* AppDelegate.swift */; };
-		FC3CE1B41B7BA82F0016E532 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC3CE1B31B7BA82F0016E532 /* GameScene.sks */; };
 		FC3CE1B61B7BA82F0016E532 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CE1B51B7BA82F0016E532 /* GameScene.swift */; };
 		FC3CE1B81B7BA82F0016E532 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CE1B71B7BA82F0016E532 /* GameViewController.swift */; };
 		FC3CE1BB1B7BA82F0016E532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3CE1B91B7BA82F0016E532 /* Main.storyboard */; };
 		FC3CE1BD1B7BA82F0016E532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3CE1BC1B7BA82F0016E532 /* Images.xcassets */; };
 		FC3CE1C01B7BA82F0016E532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3CE1BE1B7BA82F0016E532 /* LaunchScreen.xib */; };
 		FC3CE1CC1B7BA82F0016E532 /* ShootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CE1CB1B7BA82F0016E532 /* ShootTests.swift */; };
+		FC3CE1D71B7D6A370016E532 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3CE1D51B7D6A370016E532 /* player.png */; };
+		FC3CE1D81B7D6A370016E532 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3CE1D61B7D6A370016E532 /* player@2x.png */; };
+		FCF0A6681B7DAD2400A6948B /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF0A6661B7DAD2400A6948B /* ufo.png */; };
+		FCF0A6691B7DAD2400A6948B /* ufo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF0A6671B7DAD2400A6948B /* ufo@2x.png */; };
+		FCF0A66C1B7DBE6000A6948B /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF0A66A1B7DBE6000A6948B /* bullet.png */; };
+		FCF0A66F1B7DBE9B00A6948B /* bullet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF0A66E1B7DBE9B00A6948B /* bullet@2x.png */; };
+		FCF0A6711B7E442000A6948B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0A6701B7E442000A6948B /* GameOverScene.swift */; };
+		FCF0A6731B7E756100A6948B /* stars.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FCF0A6721B7E756100A6948B /* stars.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,6 @@
 		FC3CE1AC1B7BA82F0016E532 /* Shoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3CE1B01B7BA82F0016E532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3CE1B11B7BA82F0016E532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC3CE1B31B7BA82F0016E532 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FC3CE1B51B7BA82F0016E532 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FC3CE1B71B7BA82F0016E532 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FC3CE1BA1B7BA82F0016E532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +46,14 @@
 		FC3CE1C51B7BA82F0016E532 /* ShootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShootTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3CE1CA1B7BA82F0016E532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3CE1CB1B7BA82F0016E532 /* ShootTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootTests.swift; sourceTree = "<group>"; };
+		FC3CE1D51B7D6A370016E532 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		FC3CE1D61B7D6A370016E532 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		FCF0A6661B7DAD2400A6948B /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
+		FCF0A6671B7DAD2400A6948B /* ufo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ufo@2x.png"; sourceTree = "<group>"; };
+		FCF0A66A1B7DBE6000A6948B /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		FCF0A66E1B7DBE9B00A6948B /* bullet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bullet@2x.png"; sourceTree = "<group>"; };
+		FCF0A6701B7E442000A6948B /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		FCF0A6721B7E756100A6948B /* stars.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = stars.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 		FC3CE1A31B7BA82E0016E532 = {
 			isa = PBXGroup;
 			children = (
+				FCF0A6721B7E756100A6948B /* stars.atlas */,
 				FC3CE1AE1B7BA82F0016E532 /* Shoot */,
 				FC3CE1C81B7BA82F0016E532 /* ShootTests */,
 				FC3CE1AD1B7BA82F0016E532 /* Products */,
@@ -82,11 +97,17 @@
 			isa = PBXGroup;
 			children = (
 				FC3CE1B11B7BA82F0016E532 /* AppDelegate.swift */,
-				FC3CE1B31B7BA82F0016E532 /* GameScene.sks */,
 				FC3CE1B51B7BA82F0016E532 /* GameScene.swift */,
+				FCF0A6701B7E442000A6948B /* GameOverScene.swift */,
 				FC3CE1B71B7BA82F0016E532 /* GameViewController.swift */,
 				FC3CE1B91B7BA82F0016E532 /* Main.storyboard */,
 				FC3CE1BC1B7BA82F0016E532 /* Images.xcassets */,
+				FC3CE1D51B7D6A370016E532 /* player.png */,
+				FC3CE1D61B7D6A370016E532 /* player@2x.png */,
+				FCF0A6661B7DAD2400A6948B /* ufo.png */,
+				FCF0A6671B7DAD2400A6948B /* ufo@2x.png */,
+				FCF0A66A1B7DBE6000A6948B /* bullet.png */,
+				FCF0A66E1B7DBE9B00A6948B /* bullet@2x.png */,
 				FC3CE1BE1B7BA82F0016E532 /* LaunchScreen.xib */,
 				FC3CE1AF1B7BA82F0016E532 /* Supporting Files */,
 			);
@@ -167,6 +188,7 @@
 				TargetAttributes = {
 					FC3CE1AB1B7BA82E0016E532 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = V4HC7Q253B;
 					};
 					FC3CE1C41B7BA82F0016E532 = {
 						CreatedOnToolsVersion = 6.4;
@@ -198,9 +220,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF0A66F1B7DBE9B00A6948B /* bullet@2x.png in Resources */,
+				FCF0A6681B7DAD2400A6948B /* ufo.png in Resources */,
 				FC3CE1C01B7BA82F0016E532 /* LaunchScreen.xib in Resources */,
 				FC3CE1BD1B7BA82F0016E532 /* Images.xcassets in Resources */,
-				FC3CE1B41B7BA82F0016E532 /* GameScene.sks in Resources */,
+				FC3CE1D71B7D6A370016E532 /* player.png in Resources */,
+				FC3CE1D81B7D6A370016E532 /* player@2x.png in Resources */,
+				FCF0A66C1B7DBE6000A6948B /* bullet.png in Resources */,
+				FCF0A6731B7E756100A6948B /* stars.atlas in Resources */,
+				FCF0A6691B7DAD2400A6948B /* ufo@2x.png in Resources */,
 				FC3CE1BB1B7BA82F0016E532 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +249,7 @@
 			files = (
 				FC3CE1B61B7BA82F0016E532 /* GameScene.swift in Sources */,
 				FC3CE1B81B7BA82F0016E532 /* GameViewController.swift in Sources */,
+				FCF0A6711B7E442000A6948B /* GameOverScene.swift in Sources */,
 				FC3CE1B21B7BA82F0016E532 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,9 +379,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Shoot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -360,9 +392,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Shoot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -419,6 +454,7 @@
 				FC3CE1D11B7BA82F0016E532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC3CE1D21B7BA82F0016E532 /* Build configuration list for PBXNativeTarget "ShootTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +463,7 @@
 				FC3CE1D41B7BA82F0016E532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
