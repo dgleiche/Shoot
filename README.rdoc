@@ -1,3 +1,3 @@
 == Shoot: An iPhone app
 
-This is a space shooter game for the iPhone 
+This is a space shooter game for the iPhone. Uses SpriteKit as its engine.
