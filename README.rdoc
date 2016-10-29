@@ -1,0 +1,3 @@
+== Shoot: An iPhone app
+
+This is a space shooter game for the iPhone 
