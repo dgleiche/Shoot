@@ -46,7 +46,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     //~1/60
     var deltaTime: CGFloat = 0.0166
     
-    var calibrationX = 0.0
+    var calibrationZ = 0.0
     
     var contentCreated = false
     
@@ -95,7 +95,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         higherYBound = self.frame.height
         
         //dummy sprite
-        var dummySprite = SKSpriteNode(imageNamed: "star")
+        let dummySprite = SKSpriteNode(imageNamed: "star")
         
         //Star layers
         starLayer = [[dummySprite],[dummySprite],[dummySprite]]
@@ -118,7 +118,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //Create the stars
         for starLayers in 0...(starLayer.count-1) {
             
-            for index in 1...starLayerCount[starLayers] {
+            for _ in 1...starLayerCount[starLayers] {
                 let starSprite = SKSpriteNode(imageNamed: "star")
                 
                 //Randomize star's position
@@ -186,18 +186,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             if let data = motionManager.deviceMotion {
                 if !calibrated {
-                    calibrationX = data.gravity.x
+                    calibrationZ = data.gravity.z
                     
                     calibrated = true
                 }
                 
                 //If there's accel > threshold
-                if (fabs(data.gravity.x) > 0.1) {
-                    let accelX = data.gravity.x * -1
+                if (fabs(data.gravity.z - calibrationZ) > 0.2) {
+                    let accelZ = data.gravity.z * -1
+
+                    let offset = calibrationZ * 20.0
                     
-                    let offset = calibrationX * 40.0
-                    
-                    let movement = (accelX * 40.0) + offset
+                    let movement = (accelZ * 20.0) + offset
                     
                     player.physicsBody!.applyForce(CGVectorMake(0, CGFloat(movement)))
                 } else {
@@ -273,8 +273,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     //Shooting bullets
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-        if let touch = touches.first as? UITouch {
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches.first {
             let player = childNodeWithName(kPlayerName) as! SKSpriteNode
             
             let touchLocation = touch.locationInNode(self)
@@ -307,7 +307,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
     }
     
-    func random(#min: CGFloat, max: CGFloat) -> CGFloat {
+    func random(min min: CGFloat, max: CGFloat) -> CGFloat {
         return random() * (max - min) + min
     }
     
@@ -365,7 +365,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func bulletDidHitUFO(ufo:SKSpriteNode, bullet:SKSpriteNode) {
-        println("Hit")
+        print("Hit")
         bullet.removeFromParent()
         ufo.removeFromParent()
         
@@ -373,7 +373,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func ufoDidHitPlayer(ufo: SKSpriteNode, player: SKSpriteNode) {
-        println("Collision")
+        print("Collision")
         ufo.removeFromParent()
         player.removeFromParent()
         

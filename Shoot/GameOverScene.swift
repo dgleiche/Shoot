@@ -31,7 +31,7 @@ class GameOverScene: SKScene {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         runAction(SKAction.sequence([
             SKAction.runBlock() {
                 let reveal = SKTransition.flipHorizontalWithDuration(0.5)
